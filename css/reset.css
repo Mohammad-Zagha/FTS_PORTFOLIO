@@ -1,0 +1,63 @@
+/* Box sizing border-box for all elements */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  /* Remove list styles */
+  ul, ol {
+    list-style: none;
+  }
+  
+  /* Reset anchor styles */
+  a {
+    text-decoration: none;
+    color: inherit;
+  }
+  
+  /* Reset form elements */
+  button, input, textarea, select {
+    font: inherit;
+    border: none;
+    background: none;
+    outline: none;
+  }
+  
+  /* Ensure buttons inherit pointer cursor */
+  button {
+    cursor: pointer;
+  }
+  
+  /* Remove default table border spacing */
+  table {
+    border-collapse: collapse;
+    border-spacing: 0;
+  }
+  
+  /* Remove default styles for headings and paragraphs */
+  h1, h2, h3, h4, h5, h6, p {
+    margin: 0;
+    font-weight: normal;
+  }
+  
+  /* Remove default image spacing */
+  img {
+    max-width: 100%;
+    height: auto;
+    display: block;
+  }
+  
+  /* Remove default HTML scroll behavior */
+  html {
+    scroll-behavior: smooth;
+  }
+  
+  /* Reset body styles */
+  body {
+    line-height: 1.5;
+    font-family: sans-serif;
+    background-color: #fff;
+    color: #000;
+  }
+  
