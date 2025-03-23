@@ -225,19 +225,44 @@
 }
 
 
-.autoBLur{
-    animation: autoBLurAnimation linear both;
-    animation-timeline: view();
-}
-@keyframes autoBLurAnimation{
-    0%{
-        filter: blur(40px);
+.autoBLur {
+    opacity: 0;
+  }
+  
+  @supports (animation-timeline: view()) {
+    .autoBLur {
+      opacity: 1; 
+      animation: autoBLurAnimation linear both;
+      animation-timeline: view();
     }
-    45%, 55%{
+    
+    @keyframes autoBLurAnimation {
+      0% {
+        filter: blur(40px);
+      }
+      45%, 55% {
         filter: blur(0px);
-    }
-    100%{
+      }
+      100% {
         filter: blur(40px);
+      }
+    }
+  }
+  
+  @supports not (animation-timeline: view()) {
+    .autoBLur {
+      animation: autoBLurFallback 1s ease forwards;
+    }
+    
+    @keyframes autoBLurFallback {
+      0% {
+        opacity: 0;
+        filter: blur(15px);
+      }
+      100% {
+        opacity: 1;
+        filter: blur(0px);
+      }
     }
 }
 .parallax {
@@ -340,7 +365,7 @@
     transition: background 0.3s ease;
   }
   .contact-form button:hover {
-    background: #c3472c; /* adjust this darkened accent color as needed */
+    background: #c3472c; 
   }
 
 
@@ -612,4 +637,24 @@
       grid-template-columns: repeat(auto-fit, minmax(80px, 1fr));
       gap: 20px;
     }
+  }
+
+
+  .image-container {
+    width: 100%;
+    height: 350px;
+    overflow: hidden;
+    margin-bottom: 15px;
+  }
+  
+  .image-container img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: center;
+  }
+  
+  .project-card {
+    display: flex;
+    flex-direction: column;
   }
