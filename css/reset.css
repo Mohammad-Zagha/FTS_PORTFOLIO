@@ -47,19 +47,16 @@
     font-weight: normal;
   }
   
-  /* Remove default image spacing */
   img {
     max-width: 100%;
     height: auto;
     display: block;
   }
   
-  /* Remove default HTML scroll behavior */
   html {
     scroll-behavior: smooth;
   }
   
-  /* Reset body styles */
   body {
     line-height: 1.5;
     font-family: 'Poppins', sans-serif;

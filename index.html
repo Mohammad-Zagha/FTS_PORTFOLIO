@@ -1,49 +1,307 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Zagha</title>
-    <link rel="stylesheet" href="css/reset.css"> 
-    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="css/utilities.css">
-    <link rel="stylesheet" href="css/styles.css">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Zagha Portfolio</title>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap"
+    rel="stylesheet" />
+  <link rel="stylesheet" href="https://unpkg.com/aos@2.3.1/dist/aos.css" />
+
+  <link rel="stylesheet" href="css/reset.css" />
+  <link rel="stylesheet" href="css/styles.css" />
+
 </head>
-    <body >
-       <nav class="nav">
-           <a href="index.html" class="nav__logo"> Zagha</a>
-           <ul class="nav__list">
-               <li class="nav__item"><a href="index.html" class="nav__link">Home</a></li>
-               <li class="nav__item"><a href="about.html" class="nav__link">About</a></li>
-               <li class="nav__item"><a href="contact.html" class="nav__link">Projects</a></li>
-           </ul>
-            <button id="nav__button">
-                <span>Lets Talk</span>
-                <svg
-                xmlns="http://www.w3.org/2000/svg"
-                fill="none"
-                viewBox="0 0 74 74"
-                height="34"
-                width="34"
-                >
-                <circle stroke-width="3" stroke="white" r="35.5" cy="37" cx="37"></circle>
-                <path
-                    fill="white"
-                    d="M25 35.5C24.1716 35.5 23.5 36.1716 23.5 37C23.5 37.8284 24.1716 38.5 25 38.5V35.5ZM49.0607 38.0607C49.6464 37.4749 49.6464 36.5251 49.0607 35.9393L39.5147 26.3934C38.9289 25.8076 37.9792 25.8076 37.3934 26.3934C36.8076 26.9792 36.8076 27.9289 37.3934 28.5147L45.8787 37L37.3934 45.4853C36.8076 46.0711 36.8076 47.0208 37.3934 47.6066C37.9792 48.1924 38.9289 48.1924 39.5147 47.6066L49.0607 38.0607ZM25 38.5L48 38.5V35.5L25 35.5V38.5Z"
-                ></path>
-                </svg>
-            </button>
-  
-       </nav>
-       <div class="hero">
-        <h1 class="hero__title">M.Zagha</h1>
-        <span class="hero__subtitle">Bringing brands to life <br/>through creative web solution</span>
-        <div class=" hero__fotter ">
-            <div class="hero__scroll">
-                <svg xmlns="http://www.w3.org/2000/svg" version="1.1" xmlns:xlink="http://www.w3.org/1999/xlink" width="32" height="32" x="0" y="0" viewBox="0 0 24 24" style="enable-background:new 0 0 512 512" xml:space="preserve" class=""><g><path fill="#000000" fill-rule="evenodd" d="M20.03 7.72a.75.75 0 0 1 0 1.06l-7.5 7.5a.75.75 0 0 1-1.06 0l-7.5-7.5a.75.75 0 0 1 1.06-1.06L12 14.69l6.97-6.97a.75.75 0 0 1 1.06 0Z" clip-rule="evenodd" opacity="1" data-original="#000000" class=""></path></g></svg>
-                <span>Scroll Down</span>
-            </div>
+
+<body>
+  <nav class="nav" data-aos="fade-down">
+    <a href="#home" class="nav__logo">Zagha</a>
+    <ul class="nav__list">
+      <li class="nav__item"><a href="#home" class="nav__link">Home</a></li>
+      <li class="nav__item"><a href="#about" class="nav__link">About</a></li>
+      <li class="nav__item"><a href="#projects" class="nav__link">Projects</a></li>
+      <li class="nav__item"><a href="#contact" class="nav__link">Contact</a></li>
+    </ul>
+    <button id="nav__button">
+      <span>Lets Talk</span>
+      <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 74 74" height="34" width="34">
+        <circle stroke-width="3" stroke="white" r="35.5" cy="37" cx="37"></circle>
+        <path fill="white"
+          d="M25 35.5C24.1716 35.5 23.5 36.1716 23.5 37C23.5 37.8284 24.1716 38.5 25 38.5V35.5ZM49.0607 38.0607C49.6464 37.4749 49.6464 36.5251 49.0607 35.9393L39.5147 26.3934C38.9289 25.8076 37.9792 25.8076 37.3934 26.3934C36.8076 26.9792 36.8076 27.9289 37.3934 28.5147L45.8787 37L37.3934 45.4853C36.8076 46.0711 36.8076 47.0208 37.3934 47.6066C37.9792 48.1924 38.9289 48.1924 39.5147 47.6066L49.0607 38.0607ZM25 38.5L48 38.5V35.5L25 35.5V38.5Z">
+        </path>
+      </svg>
+    </button>
+  </nav>
+
+  <section id="home" class="hero" data-aos="fade-up">
+    <h1 class="hero__title" data-aos="fade-up" data-aos-delay="200">M.Zagha</h1>
+    <span class="hero__subtitle" data-aos="fade-up" data-aos-delay="400">
+      Bringing brands to life <br />
+      through creative web solutions
+    </span>
+    <div class="hero__fotter">
+      <div class="hero__scroll" data-aos="fade-up" data-aos-delay="600">
+        <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 24 24">
+          <g>
+            <path fill="#000" fill-rule="evenodd"
+              d="M20.03 7.72a.75.75 0 0 1 0 1.06l-7.5 7.5a.75.75 0 0 1-1.06 0l-7.5-7.5a.75.75 0 0 1 1.06-1.06L12 14.69l6.97-6.97a.75.75 0 0 1 1.06 0Z" />
+          </g>
+        </svg>
+        <span>Scroll Down</span>
+      </div>
+    </div>
+  </section>
+  <section class=" grid-3" style="display: grid;">
+    <div class="autoBLur">Engineer</div>
+    <div class="autoBLur">DESIGNER</div>
+    <div class="autoBLur">DEVELOPER</div>
+    <div class="autoBLur">MOBILE</div>
+    <div class="autoBLur">SEE MORE &#8599;</div>
+  </section>
+
+  <section id="about" class="parallax" data-aos="fade-up">
+    <div class="section">
+      <h2 data-aos="fade-right">About Me</h2>
+      <p data-aos="fade-left">
+        I am a passionate web developer and designer with a knack for creating
+        engaging digital experiences. With years of experience in crafting
+        unique designs, I specialize in transforming ideas into interactive
+        solutions. Let's create something amazing together.
+      </p>
+    </div>
+  </section>
+
+
+  <section id="projects" class="section" data-aos="fade-up">
+    <h2 data-aos="fade-up">Projects</h2>
+    <div class="projects-grid">
+      <div class="project-card" data-aos="zoom-in">
+        <img src="https://placehold.co/600x400" alt="Project 1" />
+        <div class="project-info">
+          <h3>Project One</h3>
+          <p>
+            Innovative design and intuitive interfaces for modern brands.
+          </p>
         </div>
-       </div>
-    </body>
+      </div>
+      <div class="project-card" data-aos="zoom-in" data-aos-delay="100">
+        <img src="https://placehold.co/600x400" alt="Project 2" />
+        <div class="project-info">
+          <h3>Project Two</h3>
+          <p>
+            Responsive design solutions that enhance user experiences.
+          </p>
+        </div>
+      </div>
+      <div class="project-card" data-aos="zoom-in" data-aos-delay="200">
+        <img src="https://placehold.co/600x400" alt="Project 3" />
+        <div class="project-info">
+          <h3>Project Three</h3>
+          <p>
+            Cutting-edge web applications that drive engagement.
+          </p>
+        </div>
+      </div>
+    </div>
+  </section>
+  <section id="experience" class="section" data-aos="fade-up">
+    <h2 data-aos="fade-up">Experience</h2>
+    <div class="timeline" data-aos="fade-up" data-aos-delay="300">
+      <div class="timeline-item" data-aos="fade-right" data-aos-delay="400">
+        <div class="timeline-dot"></div>
+        <div class="timeline-date"> July 2024 / Nov 2024 </div>
+        <div class="timeline-content">
+          <div>
+            <h3>Frontend Developer</h3>
+
+            <a href="https://www.linkedin.com/company/rhv-intelligence-precision/" target="_blank">RHV - Sight
+              Studios</a>
+
+          </div>
+          <p> Designed and developed a scalable, maintainable project environment with a structured file system and a
+            robust design system. Implemented over 250 API integrations using React Query and Axios, creating custom
+            hooks for efficient data handling, caching, pagination, and optimistic updates. Built a real-time analytics
+            system with WebSocket API and ShadCn charts, enabling dynamic platform updates. Developed advanced filtering
+            for eight asset types, a comprehensive form system with react-hook-form and Zod, and an interactive action
+            system for seamless user engagement
+          </p>
+          <span class="timeline-tag">React</span>
+          <span class="timeline-tag">Next js</span>
+          <span class="timeline-tag">Typescript</span>
+        </div>
+      </div>
+
+      <div class="timeline-item" data-aos="fade-left" data-aos-delay="500">
+        <div class="timeline-dot"></div>
+        <div class="timeline-date">May 2024 June 2024</div>
+        <div class="timeline-content">
+          <div>
+            <h3>Frontend Development Internship</h3>
+
+
+            <a href="https://www.linkedin.com/company/rhv-intelligence-precision/" target="_blank">RHV - Sight
+              Studios</a>
+
+          </div>
+          <p>Completed an intensive internship at RHV - Sight Studios, rapidly gaining proficiency in Next.js within
+            three weeks. Enhanced frontend development skills through advanced JavaScript training while mastering Git
+            and GitHub for efficient version control and collaboration. Gained hands-on experience with Scrum, deepening
+            understanding of agile principles and workflows.</p>
+          <span class="timeline-tag">Git</span>
+          <span class="timeline-tag">Github</span>
+          <span class="timeline-tag">Next js</span>
+          <span class="timeline-tag">HTML</span>
+          <span class="timeline-tag">CSS</span>
+          <span class="timeline-tag">CSS</span>
+          <span class="timeline-tag">Typescript</span>
+
+
+        </div>
+      </div>
+
+      <div class="timeline-item" data-aos="fade-right" data-aos-delay="600">
+        <div class="timeline-dot"></div>
+        <div class="timeline-date">FEB 2025 / Present </div>
+        <div class="timeline-content">
+          <div>
+            <h3>Frontend Development Internship</h3>
+            <a href="https://www.linkedin.com/company/foothill-technology-solutions-llc." target="_blank">Foothill
+              Technology Solutions</a>
+          </div>
+          <p>An intensive Frontend internship taken over 3 months containing 112 topics Git, HTML, Css, Javascript,
+            DOM, NodeJs, Unit Testing, React, TypeScript , Routing, React Testing , Advanced React Topics , React
+            Design Patterns , Practical projects</p>
+          <span class="timeline-tag">Figma</span>
+          <span class="timeline-tag">Adobe XD</span>
+          <span class="timeline-tag">Prototyping</span>
+        </div>
+      </div>
+
+      <div class="timeline-item" data-aos="fade-left" data-aos-delay="700">
+        <div class="timeline-dot"></div>
+        <div class="timeline-date">Jan 2025 / Mar 2025</div>
+        <div class="timeline-content">
+          <div>
+
+            <h3>FREELANCE EXPERIENCE</h3>
+            <h3>LOYINT</h3>
+          </div>
+          <p>
+            Developed using Flutter, LOYINT is a feature-rich mobile application designed for optimal performance and
+            scalability. The project integrates over 50 API endpoints and offers a seamless user experience </p>
+          <span class="timeline-tag">Dart</span>
+          <span class="timeline-tag">Flutter</span>
+          <span class="timeline-tag">Getx</span>
+          <span class="timeline-tag">Firebase</span>
+        </div>
+      </div>
+    </div>
+  </section>
+ 
+</section>
+  <!-- Contact Section -->
+  <section id="contact" class="section" data-aos="fade-up">
+    <h2 data-aos="fade-up">Contact</h2>
+    <div class="contact-form" data-aos="fade-up" data-aos-delay="200">
+      <h3>Get In Touch</h3>
+      <form action="#" method="post">
+        <input type="text" name="name" placeholder="Your Name" required />
+        <input type="email" name="email" placeholder="Your Email" required />
+        <textarea name="message" rows="5" placeholder="Your Message" required></textarea>
+        <button type="submit">Send Message</button>
+      </form>
+    </div>
+  </section>
+  <section id="skills" class="section" >
+    <h2 data-aos="fade-up">Skills</h2>
+    <div class="skills-container">
+      <div class="skill-category" data-aos="fade-right" data-aos-delay="100">
+        <h3>Frontend</h3>
+        <div class="skills-wrapper">
+          <div class="skill-bar">
+            <span class="skill-name">HTML/CSS</span>
+            <div class="bar-container">
+              <div class="bar-fill" style="--skill-level: 90%;">
+                <span class="skill-percentage">90%</span>
+              </div>
+            </div>
+          </div>
+          <div class="skill-bar">
+            <span class="skill-name">JavaScript</span>
+            <div class="bar-container">
+              <div class="bar-fill" style="--skill-level: 85%;">
+                <span class="skill-percentage">85%</span>
+              </div>
+            </div>
+          </div>
+          <div class="skill-bar">
+            <span class="skill-name">React</span>
+            <div class="bar-container">
+              <div class="bar-fill" style="--skill-level: 80%;">
+                <span class="skill-percentage">80%</span>
+              </div>
+            </div>
+          </div>
+          <div class="skill-bar">
+            <span class="skill-name">Next.js</span>
+            <div class="bar-container">
+              <div class="bar-fill" style="--skill-level: 75%;">
+                <span class="skill-percentage">75%</span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      
+      <div class="skill-category"  data-aos="fade-right" data-aos-delay="100">
+        <h3>Other Skills</h3>
+        <div class="skills-wrapper">
+          <div class="skill-bar">
+            <span class="skill-name">TypeScript</span>
+            <div class="bar-container">
+              <div class="bar-fill" style="--skill-level: 75%;">
+                <span class="skill-percentage">75%</span>
+              </div>
+            </div>
+          </div>
+          <div class="skill-bar">
+            <span class="skill-name">Flutter</span>
+            <div class="bar-container">
+              <div class="bar-fill" style="--skill-level: 70%;">
+                <span class="skill-percentage">70%</span>
+              </div>
+            </div>
+          </div>
+          <div class="skill-bar">
+            <span class="skill-name">Firebase</span>
+            <div class="bar-container">
+              <div class="bar-fill" style="--skill-level: 65%;">
+                <span class="skill-percentage">65%</span>
+              </div>
+            </div>
+          </div>
+          <div class="skill-bar">
+            <span class="skill-name">UI/UX Design</span>
+            <div class="bar-container">
+              <div class="bar-fill" style="--skill-level: 60%;">
+                <span class="skill-percentage">60%</span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    
+    <!-- Skills Icons Grid (Auto-blur animation) -->
+
+  <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+  <script>
+    AOS.init({
+      duration: 1000,
+      once: false
+    });
+  </script>
+</body>
+
 </html>
